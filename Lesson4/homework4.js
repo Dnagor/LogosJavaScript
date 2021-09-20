@@ -8,8 +8,8 @@ function desc(a, b) {
 function positive(i) {
     return i >= 0
 }
-function negative(i){
-    return i<0
+function negative(i) {
+    return i < 0
 }
 let arrSortedAsc = arr.sort(asc)
 console.log(arrSortedAsc)
@@ -22,27 +22,27 @@ let arrFilteredNegative = arr.filter(negative)
 console.log(arrFilteredPositive)
 console.log(arrFilteredNegative)
 
-function getRandom(min,max){
-    return Math.floor(Math.random()*(max-min+1)+min)
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
-let students = [] 
-for(let i = 1; i<=10;i++){
+let students = []
+for (let i = 1; i <= 10; i++) {
     let student = {
-        yearOfStuding: getRandom(1995,2021),
+        yearOfStuding: getRandom(1995, 2021),
         facultyName: "Faculty name " + i
     }
     students.push(student)
 }
 console.log(students)
 
-function sumYears(sum,student){
-    return sum+student.yearOfStuding
+function sumYears(sum, student) {
+    return sum + student.yearOfStuding
 }
 
-let sumOfYears = students.reduce(sumYears,0)
+let sumOfYears = students.reduce(sumYears, 0)
 console.log(sumOfYears)
 
-function getFacultlyNames(array){
+function getFacultlyNames(array) {
     return array.facultyName
 }
 
