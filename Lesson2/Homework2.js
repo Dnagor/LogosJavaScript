@@ -48,9 +48,9 @@ function div(a, b) {
         return a / b;
     }
 }
-function div1(a,b){
-    if (isFinite(a/b)){
-        return a/b;
+function div1(a, b) {
+    if (isFinite(a / b)) {
+        return a / b;
     }
     return "Cannot divide by zero"
 }
@@ -63,3 +63,30 @@ console.log(action(1, 0, div))
 console.log(action(1, 2, mult))
 console.log(action(1, 2, sub))
 console.log(action(1, 0, div1))
+
+function act(a, b, operation) {
+    switch (operation) {
+        case "*": {
+            return a * b
+            break
+        }
+        case "-": {
+            return a - b
+            break
+        }
+        case "+": {
+            return a + b
+            break
+        }
+        case "/": {
+            if (b == 0) {
+                console.log("Cannot divide by zero")
+            } else {
+                return a / b
+            }
+            break
+        }
+    }
+}
+console.log("__________________")
+console.log(act(2, 0, "+"))
