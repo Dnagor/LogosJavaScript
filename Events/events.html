@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events handling</title>
+    <style>
+        .error{
+            background-color: red;
+        }
+        .accepted{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="Please press me" onclick="showData('data from script')">
+    <hr>
+    <input type="button" value="count birds" onclick="countBirds()">
+    <hr>
+    <input id="eventFromJS" type="button" value="eventFromJS">
+    <hr>
+    <textarea name="" id="area" cols="30" rows="10"></textarea>
+    <hr>
+    <input id="focusButton" type="button" value="focusButton">
+    <input id="focusText" type="text">
+    <hr>
+    <label>Age:<input type="text" name="" id="formValidationAge"></label>
+    <label> Name:</label><input type="text" name="" id="formValidationName"></label>
+    <hr>
+    <script src="eventsHandler.js"></script>
+</body>
+
+</html>
