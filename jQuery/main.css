@@ -1,0 +1,24 @@
+.selected{
+    color:cadetblue
+}
+#wrapper{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: chocolate;
+	justify-content: center;
+	flex-direction: column;
+}
+#header{
+	background-color: chocolate;
+	height: 50px;
+	line-height: 50px;
+}
+#link{
+	margin-left: 5%;
+	text-decoration: none;
+}
+#link:hover{
+	color: darkviolet;
+}
